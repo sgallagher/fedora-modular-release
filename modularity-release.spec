@@ -7,17 +7,21 @@ Name:           modular-release
 Version:        %{dist_version}
 Release:        0.1%{?dist}
 License:        MIT
-Group:          System Environment/Base
 URL:            https://pagure.io/fedora-release
 Source0:        90-default.preset
 Source1:        99-default-disable.preset
 Source2:        LICENSE
 Source3:        Fedora-Legal-README.txt
+
+BuildRequires:  coreutils
+
 Provides:       redhat-release
 Provides:       system-release
 Provides:       system-release(%{version})
 Conflicts:      fedora-release
 
+# Uncomment this once this package actually exists
+# or remove it if we decide to ship the repos in this package
 #Requires:       modular-repos(%{version})
 BuildArch:      noarch
 

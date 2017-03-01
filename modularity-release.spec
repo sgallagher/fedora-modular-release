@@ -1,10 +1,10 @@
 %define release_name Twenty Six
 %define dist_version 26
-%define bug_version 26
+%define bug_version %{dist_version}
 
 Summary:        Fedora Modular release files
 Name:           modular-release
-Version:        26
+Version:        %{dist_version}
 Release:        0.1%{?dist}
 License:        MIT
 Group:          System Environment/Base

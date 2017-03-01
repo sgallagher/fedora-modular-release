@@ -1,0 +1,17 @@
+disable systemd-timesyncd.service
+disable systemd-networkd.service
+disable systemd-resolved.service
+enable atd.*
+enable crond.*
+enable bluetooth.*
+enable avahi-daemon.*
+enable cups.*
+enable rsyslog.*
+enable syslog-ng.*
+enable sysklogd.*
+enable lvm2-monitor.*
+enable lvm2-lvmetad.*
+enable dm-event.*
+enable gpm.*
+enable lvm2-lvmpolld.*
+enable mcelog.*

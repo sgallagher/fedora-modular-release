@@ -5,9 +5,9 @@
 Summary:        Fedora Modular release files
 Name:           modular-release
 Version:        %{dist_version}
-Release:        0.1%{?dist}
+Release:        0.2%{?dist}
 License:        MIT
-URL:            https://pagure.io/fedora-release
+URL:            https://github.com/sgallagher/modular-release
 Source0:        90-default.preset
 Source1:        99-default-disable.preset
 Source2:        LICENSE
@@ -111,4 +111,9 @@ install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_prefix}/lib/systemd/system-preset/
 %dir %{_prefix}/lib/systemd/system-preset/
 %{_prefix}/lib/systemd/system-preset/90-default.preset
 %{_prefix}/lib/systemd/system-preset/99-default-disable.preset
+
+
+%changelog
+* Wed Mar 01 2017 Stephen Gallagher <sgallagh@redhat.com> - -0.2
+- Initial packaging
 

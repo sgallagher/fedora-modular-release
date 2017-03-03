@@ -5,7 +5,7 @@
 Summary:        Fedora Modular release files
 Name:           modular-release
 Version:        %{dist_version}
-Release:        0.3%{?dist}
+Release:        0.4%{?dist}
 License:        MIT
 URL:            https://github.com/sgallagher/modular-release
 Source0:        90-default.preset
@@ -114,9 +114,12 @@ install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_prefix}/lib/systemd/system-preset/
 
 
 %changelog
-* Fri Mar 03 2017 Stephen Gallagher <sgallagh@redhat.com> - -0.3
+* Fri Mar 03 2017 Stephen Gallagher <sgallagh@redhat.com> - 26-0.4
+- Fix changelog
+
+* Fri Mar 03 2017 Stephen Gallagher <sgallagh@redhat.com> - 26-0.3
 - Updates based on package review
 
-* Wed Mar 01 2017 Stephen Gallagher <sgallagh@redhat.com> - -0.2
+* Wed Mar 01 2017 Stephen Gallagher <sgallagh@redhat.com> - 26-0.2
 - Initial packaging
 
